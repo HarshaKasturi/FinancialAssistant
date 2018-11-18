@@ -62,15 +62,17 @@ class Login extends Component{
 	
 	render(){
 		return(
-<<<<<<< HEAD
 			<React.Fragment>
-				<div className={`${classes.logindiv}`}>
-					<div>
+					<div className={divstylesleft}>
 						<img src="" alt="image"/>
 					</div>
-					<Form onSubmit = {this.handleSubmit}>
-						<div  width="50%">
-							<div className="pa4 black-80">
+					<Form onSubmit = {divstylesright}>
+					<div>
+						
+						<center>
+							<h1>Financial Assistant</h1>
+							<h2>Login</h2>
+							<div>
 								<label htmlFor="username">username</label>
 								<input  value = {this.props.username } onChange={this.handleUsernameChange} type="text"/>
 							</div>
@@ -78,32 +80,11 @@ class Login extends Component{
 								<label htmlFor="password">password</label>
 								<input value = {this.props.password } onChange = {this.handlePasswordChange} type="password"/>
 							</div>
-							{/* <Link to >Register</Link> */}
 							<Button type="submit">Login</Button>
-						</div>
+							<a href="">Register</a>
+						</center>
+					</div>
 					</Form>
-=======
-			<div>
-				<div  style={divstylesleft}>
-					<img src="" alt="image"/>
-				</div>
-				<div  style={divstylesright}>
-					<center>
-						<h1>Financial Assistant</h1>
-						<h2>Login</h2>
-						<div>
-							<label htmlFor="username">username</label>
-							<input type="text"/>
-						</div>
-						<div>
-							<label htmlFor="password">password</label>
-							<input type="password"/>
-						</div>
-						<button>Login</button>
-						<a href="">Register</a>
-					</center>
->>>>>>> 31c6d3184f4bbda402fe3af5351b7795eefeb55a
-				</div>
 			</React.Fragment>
 		)
 	}
